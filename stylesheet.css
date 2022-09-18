@@ -1,0 +1,162 @@
+/*Importing the font of choice from google being "Lato"*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+/*Comprehensive Description of stylesheet
+1. Root Settings
+2. Body & Html Settings
+3. Navbar
+4. Hero Section
+5.
+6.
+7.
+*/
+
+/*1. Root Settings*/
+
+/*Here I use * in order for every component of the html document to get effected by what is written below*/
+* {
+    font-family: Lato;
+
+    /*Below I use border-box to remove any invisible borders and margins*/
+    box-sizing: border-box;
+
+    /*Below I declare my color pallete for the comming styling*/
+
+    --one: #8A5D36;
+    --two: #292718;
+    --three: #634125;
+    --four: #000F0D;
+    --white: #ffffff;
+}
+/*2. Body and html Settings*/
+body, html {
+    /*Making sure margin & padding is removed*/
+    margin:0;
+    padding:0;
+    /*Ensuring that width overflow is hidden*/
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height:100%;
+    background-color: var(--three);
+}
+/*3. Navbar*/
+/*Move the navbar to the right aswell as move items to the middle of the menu section*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 8vh;
+    width: 100%;
+    position: fixed;
+    align-items: center;
+    margin: 0 auto;
+    background: var(--two);
+    z-index:999;
+    top:0;
+    left:0;
+}
+/*Change the size/color of the companyname*/
+.companyname {
+    font-size: 1.5rem;
+    color:var(--white);
+    font-weight: bold;
+    margin-left: 2vw;
+}
+/*Configure the navbar*/
+.navbar-links {
+    height:100%;
+    background-color: var(--one)
+}
+.navbar-links ul {
+    display: flex;
+    padding: 0;
+    margin-top: 2vh;
+}
+.navbar-links li {
+    list-style: none;
+}
+.navbar-links li a {
+    text-decoration: none;
+    color: var(--white);
+    padding:0.5em;
+}
+/*Make the links be underlined while mousepointer hovers over it*/
+.navbar-links li:hover {
+    text-decoration: underline;
+}
+/*Above Validated 18:11 13/09/2022*/
+.mobilemenu {
+    position: absolute;
+    top:0.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.mobilemenu .cup {
+    height: 40px;
+    width: 100%;
+    background-color:var(--three);
+    border-radius: 40%;
+}
+
+/*Below configures the mobile navbar*/
+@media screen and (max-width: 360px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }    
+    .navbar-links {
+        display:none;
+        width:100%;
+        height:20vh;
+    }
+    .mobilemenu {
+        display: flex;
+    }
+    .navbar-links {
+        display: none;
+        width: 100%;
+        height: 20vh;
+    }
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar-links ul li {
+        text-align: center;
+    }
+    .navbar-links.active {
+    display: flex;
+    background-color: var(--two);
+    }
+    /*This line makes the text on the page smaller to fit the mobile screen better*/
+    #usp-text {
+        font-size: 90%;
+    }
+}
+
+/*4. Hero Section*/
+/*Below I determin the background of the page aswell as the position and details of the background image*/
+.hero-image {
+    background-image: url(/Projekt/Projektbilder/cafébackground.jpg);
+    height:120vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color:var(--white)
+}
+.hero-text h1 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+/*Above Validated 13/09/2022 18:58*/
