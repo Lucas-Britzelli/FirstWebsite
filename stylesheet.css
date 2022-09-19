@@ -139,7 +139,7 @@ body, html {
 /*4. Hero Section*/
 /*Below I determin the background of the page aswell as the position and details of the background image*/
 .hero-image {
-    background-image: url(/Projekt/Projektbilder/cafébackground.jpg);
+    background-image: url(cafébackground.jpg);
     height:120vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -162,9 +162,25 @@ body, html {
 
 /*5. Offer Grid*/
 .erbjuds {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.offersgrid {
+    width: 100%;
     display: grid;
-    grid-template: repeat(3, 1fr);
-    grid-gap: 5rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
     text-align: center;
     margin: 0 auto;
+}
+.huvudtitel {
+    text-align: center;
+    color: var(--white);
+}
+.titel {
+    color: var(--white);
+}
+.text {
+    color: var(--white);
 }
