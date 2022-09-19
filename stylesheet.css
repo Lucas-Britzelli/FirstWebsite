@@ -8,7 +8,7 @@
 4. Hero Section
 5. Offer Grid
 6. Meny Grid
-7.
+7. Media query for 5 & 6
 */
 
 /*1. Root Settings*/
@@ -101,7 +101,7 @@ body, html {
 }
 
 /*Below configures the mobile navbar*/
-@media screen and (max-width: 360px) {
+@media screen and (min-width: 360px) and (max-width:500px) {
     .navbar {
         flex-direction: column;
         align-items: flex-start;
@@ -133,6 +133,9 @@ body, html {
     /*This line makes the text on the page smaller to fit the mobile screen better*/
     #usp-text {
         font-size: 90%;
+    }
+    .erbjuds {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -167,12 +170,10 @@ body, html {
     padding: 0;
 }
 .offersgrid {
-    width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 2rem;
     text-align: center;
-    margin: 0 auto;
 }
 .huvudtitel {
     text-align: center;
@@ -186,7 +187,7 @@ body, html {
 }
 /*6. Meny grid*/
 .menygrid {
-    background-image: url(Menybild.jpg);
+    background-color: var(--four);
     margin-left: 20rem;
     margin-right: 20rem;
 }
@@ -215,4 +216,26 @@ body, html {
 }
 .menudrinks h3, .menusnacks h3 {
     margin-right: 2em;
+}
+/*7. Media query for point 5 and 6*/
+@media screen and (min-width:360px) and (max-width:900px) {
+    .offersgrid {
+        grid-template-columns: 1fr;
+    }
+    .menygrid {
+        display: flex;
+        background-color: var(--three);
+        justify-content: right;
+        flex-direction: column;
+    }
+    .menudrinks {
+        display: flex;
+        justify-content: right;
+        margin-left: 3em;
+    }
+    .dryck h2, .snacks h2 {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
 }
