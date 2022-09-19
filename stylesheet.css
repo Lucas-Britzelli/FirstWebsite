@@ -6,7 +6,7 @@
 2. Body & Html Settings
 3. Navbar
 4. Hero Section
-5.
+5. Offer Grid
 6.
 7.
 */
@@ -35,7 +35,6 @@ body, html {
     padding:0;
     /*Ensuring that width overflow is hidden*/
     overflow-x: hidden;
-    overflow-y: hidden;
     height:100%;
     background-color: var(--three);
 }
@@ -160,3 +159,12 @@ body, html {
     font-weight: 800;
 }
 /*Above Validated 13/09/2022 18:58*/
+
+/*5. Offer Grid*/
+.erbjuds {
+    display: grid;
+    grid-template: repeat(3, 1fr);
+    grid-gap: 5rem;
+    text-align: center;
+    margin: 0 auto;
+}
