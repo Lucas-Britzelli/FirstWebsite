@@ -7,7 +7,7 @@
 3. Navbar
 4. Hero Section
 5. Offer Grid
-6.
+6. Meny Grid
 7.
 */
 
@@ -183,4 +183,23 @@ body, html {
 }
 .text {
     color: var(--white);
+}
+/*6. Meny grid*/
+.menygrid {
+    background: rgba(41, 39, 24, 20);
+    margin-left: 20rem;
+    margin-right: 20rem;
+}
+.dryck h2, .snacks h2 {
+    text-align: center;
+    color: var(--white);
+    margin-top: 2vh;
+}
+.menyitems {
+    display: flex;
+    color: var(--white);
+    justify-content: center;
+}
+.menyitems h3 {
+    margin-right: 2em;
 }
