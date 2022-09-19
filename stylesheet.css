@@ -186,20 +186,33 @@ body, html {
 }
 /*6. Meny grid*/
 .menygrid {
-    background: rgba(41, 39, 24, 20);
+    background-image: url(Menybild.jpg);
     margin-left: 20rem;
     margin-right: 20rem;
 }
-.dryck h2, .snacks h2 {
-    text-align: center;
+.dryck h2 {
+    text-align: left;
     color: var(--white);
     margin-top: 2vh;
+    margin-left: 1.5em;
 }
-.menyitems {
+.snacks h2 {
+    text-align: right;
+    color: var(--white);
+    margin-right: 3em;
+}
+.menudrinks {
     display: flex;
     color: var(--white);
-    justify-content: center;
+    justify-content: left;
+    margin-left: 1.5em;
 }
-.menyitems h3 {
+.menusnacks {
+    display: flex;
+    color: var(--white);
+    justify-content: right;
+    margin-right: 3em;
+}
+.menudrinks h3, .menusnacks h3 {
     margin-right: 2em;
 }
