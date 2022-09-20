@@ -8,7 +8,9 @@
 4. Hero Section
 5. Offer Grid
 6. Meny Grid
-7. Media query for 5 & 6
+7. Contact form Styling
+8. Footer Styling
+9. Media querries
 */
 
 /*1. Root Settings*/
@@ -27,6 +29,7 @@
     --three: #634125;
     --four: #000F0D;
     --white: #ffffff;
+    scroll-behavior: smooth;
 }
 /*2. Body and html Settings*/
 body, html {
@@ -142,7 +145,7 @@ body, html {
 /*4. Hero Section*/
 /*Below I determin the background of the page aswell as the position and details of the background image*/
 .hero-image {
-    background-image: url(cafébackground.jpg);
+    background-image: url(img/cafébackground.jpg);
     height:120vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -186,56 +189,179 @@ body, html {
     color: var(--white);
 }
 /*6. Meny grid*/
-.menygrid {
-    background-color: var(--four);
-    margin-left: 20rem;
-    margin-right: 20rem;
+.meny {
+    background-image: url(img/MenyBakgrund.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+.coffeemugsmall {
+    display: none;
+}
+.coffeemug {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2em;
+}
+
 .dryck h2 {
-    text-align: left;
     color: var(--white);
     margin-top: 2vh;
     margin-left: 1.5em;
 }
 .snacks h2 {
-    text-align: right;
     color: var(--white);
-    margin-right: 3em;
 }
 .menudrinks {
     display: flex;
     color: var(--white);
     justify-content: left;
-    margin-left: 1.5em;
 }
 .menusnacks {
     display: flex;
     color: var(--white);
     justify-content: right;
-    margin-right: 3em;
 }
 .menudrinks h3, .menusnacks h3 {
     margin-right: 2em;
 }
-/*7. Media query for point 5 and 6*/
+
+/*7. Contactform styling*/
+.contact-title {
+    display: flex;
+    color: var(--white);
+    align-items: center;
+    justify-content: center;
+
+}
+.contactbox {
+    display: flex;
+    background-image: url(img/contactformbackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 25vh;
+    margin-left: 60em;
+    margin-right: 60em;
+ }
+ .inputrow {
+    display: flex;
+    width: 100%;
+ }
+ .inputtopics {
+    display: flex;
+    width: 50%;
+    margin-left: 15px;
+ }
+ .input-message {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+}
+.input-messagesmall {
+    display: none;
+}
+.sendbutton {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 15px;
+}
+/*8. Footer styling*/
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+}
+/*9. Media querries*/
 @media screen and (min-width:360px) and (max-width:900px) {
     .offersgrid {
         grid-template-columns: 1fr;
     }
-    .menygrid {
-        display: flex;
-        background-color: var(--three);
-        justify-content: right;
-        flex-direction: column;
+    .huvudtitel {
+        margin-top: 2vh;
     }
-    .menudrinks {
+    .menygrid {
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+    .menudrinks, .menusnacks {
         display: flex;
-        justify-content: right;
-        margin-left: 3em;
+        justify-content: center;
+        align-items: center;
     }
     .dryck h2, .snacks h2 {
         display: flex;
-        justify-content: right;
+        justify-content: center;
         align-items: center;
     }
+    .coffeemug {
+        display: none;
+    }
+    .coffeemugsmall {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 2em;
+    }
+    .contactbox {
+        width: 95%;
+        margin: auto;
+    }
+    .inputrow {
+        display: flex;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+    }
+    .input-message {
+        display: none;
+    }
+    .inputtopics {
+        display: flex;
+    }
+    .input-messagesmall {
+        display: flex;
+        margin-top: 5px;
+    }
 }
+@media screen and (min-width:980px) {
+    .menygrid {
+        margin-right: 40rem;
+        margin-left: 40rem;
+    }
+    .offersgrid {
+        margin-left: 30rem;
+    }
+    .menudrinks, .menusnacks {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .dryck h2, .snacks h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .coffeemugsmall {
+        display: none;
+    }
+    .contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .contactbox {
+        display: flex;
+        width: 40%;
+    }
+    .inputtopics {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+/*Above Valdiated 20/09/2022 17:05 with 0 errors*/

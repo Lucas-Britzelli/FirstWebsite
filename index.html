@@ -21,17 +21,17 @@
         <!--creating the desktop navbar-->
     <div class="navbar-links">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Menu</a></li>
+            <li><a href="#HomePage">Home</a></li>
+            <li><a href="#meny">Menu</a></li>
             <li><a href="#">Location</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
 </nav>
     <!--Above Validated 13/09/2022 16:37-->
 
     <!--Hero Section-->
-    <section class="hero-image">
+    <section class="hero-image" id="HomePage">
         <div class="hero-text">
             <h1>A cozy Café</h1>
             <h2 id="usp-text">The perfect place to relax and enjoy a drink</h2>
@@ -40,65 +40,103 @@
     <!--Above Validated 13/09/2022 18:57-->
     <!--Offers section-->
     <section class="erbjuds">
-        <h2 class="huvudtitel">Detta erbjuder vi</h2>
+        <h2 class="huvudtitel">This is what we offer</h2>
         <div class="offersgrid">
             <div class="offers">
-            <h3 class="titel">Mysiga lokaler</h3>
-            <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br> Voluptates, doloribus?</p>
+                <h3 class="titel">Cozy interior</h3>
+                <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br> Voluptates, doloribus?</p>
             </div>
             <div class="offers">
-            <h3 class="titel">När producerat</h3>
-            <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br> Accusantium repudiandae molestiae doloremque?</p>
+                <h3 class="titel">Environmentally friendly</h3>
+                <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br> Accusantium repudiandae molestiae doloremque?</p>
             </div>
             <div class="offers">
-            <h3 class="titel">Enskilda rum</h3>
-            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> Dolor, nihil?</p>
-            </div>
-            <div class="offers">
-            <h3 class="titel"></h3>
-            <p class="text"></p>
+                <h3 class="titel">Offices</h3>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> Dolor, nihil?</p>
             </div>
             </div>
     </section>
 
     <!--Menu grid-->
-    <section class="meny">
-        <h2 class="huvudtitel">Vår Meny!</h2>
+    <section class="meny" id="meny">
+        <h2 class="huvudtitel">Our menu!</h2>
         <div class="menygrid">
             <div class="dryck">
-                <h2>Dryck</h2>
+                <h2>Drinks</h2>
             </div>
             <div class="menudrinks">
-                <h3>Kaffe</h3>
+                <h3>Coffee</h3>
                 <h4>25kr</h4>
             </div>
             <div class="menudrinks">
-                <h3>Te</h3>
+                <h3>Tea</h3>
                 <h4>20kr</h4>
             </div>
             <div class="menudrinks">
-                <h3>Is Te</h3>
+                <h3>Ice Tea</h3>
                 <h4>22kr</h4>
             </div>
             <div class="snacks">
-                <h2>Tilltugg</h2>
+                <h2>Snacks</h2>
             </div>
             <div class="menusnacks">
                 <h3>Cheesecake</h3>
                 <h4>35kr</h4>
             </div>
             <div class="menusnacks">
-                <h3>Rulltårta</h3>
-                <h4>25kr</h4>
+                <h3>Cookie</h3>
+                <h4>15kr</h4>
             </div>
         </div>
-
+        <div class="coffeemug">
+                <img src="img/CoffeePicture250x375.jpg" alt="One of our coffees!">
+            </div>
+        <div class="coffeemugsmall">
+                <img src="img/CoffeePicture75x113.jpg" alt="One of our coffees!">
+            </div>
     </section>
-
-
+    <!--Contact form-->
+    <section class="contactsection" id="contact">
+        <div class="contact-title">
+            <h2>Contact me!</h2>
+        </div>
+        <div class="contact">
+            <div class="contactbox">
+                <form>
+                    <div class="inputrow">
+                        <div class="inputtopics">
+                            <input type="text" placeholder="Firstname">
+                        </div>
+                        <div class="inputtopics">
+                            <input type="text" placeholder="Lastname">
+                        </div>
+                    </div>
+                    <div class="inputrow">
+                        <div class="inputtopics">
+                            <input type="text" placeholder="Topic">
+                        </div>
+                        <div class="inputtopics">
+                            <input type="text" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <div class="inputrow">
+                        <div class="input-message">
+                            <textarea rows="8" cols="55" placeholder="Message..." required></textarea>
+                        </div>
+                        <div class="input-messagesmall">
+                            <textarea rows="4" cols="20" placeholder="Message..." required></textarea>
+                        </div>
+                    </div>
+                    <div class="sendbutton">
+                        <input type="submit" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
     <footer>
-    <p>If you too want a website like this one, contact me here: ###<p>
+    <p>Copyright © 2022 <br> Lucas Britzelli webdev<p>
     </footer>
 </body>
-
+<!--Above validated 20/09/2022 17:04 with 0 errors-->
 </html>
